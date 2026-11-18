@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Maarij’s portfolio of software projects and self-hosted services.">
+  <meta name="theme-color" content="#0b100f">
+  <title>Maarij — Software &amp; Infrastructure</title>
+  <link rel="icon" href="./assets/mark.png">
+  <link rel="stylesheet" href="./site.css">
+  <script src="./motion.js" defer></script>
+  <script src="./portfolio.js" defer></script>
+</head>
+<body id="top">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="wordmark" href="#top" aria-label="Maarij, back to top"><span>maarij</span><span class="muted">@</span>dev<span class="muted">:~$</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#intro">./whoami</a>
+        <a href="#skills">./skills</a>
+        <a href="#projects">./projects</a>
+        <a href="#contacts">./contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero wrap" id="intro" aria-labelledby="hero-title">
+      <p class="prompt"><span class="accent">~/portfolio</span> <span class="muted">$</span> whoami<span class="prompt-cursor" aria-hidden="true"></span></p>
+      <h1 id="hero-title">Maarij<span>.</span></h1>
+      <p class="hero-role">Software &amp; infrastructure</p>
+      <p class="hero-description">I run services on Linux and build software I use. Right now I’m learning to provision with Terraform, deploy on Kubernetes, and automate the steps in between.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#projects">view projects <span aria-hidden="true">↓</span></a>
+        <a class="button" href="#terminal">open terminal <span aria-hidden="true">›</span></a>
+      </div>
+    </section>
+
+    <section class="terminal wrap" id="terminal" aria-labelledby="terminal-title" data-reveal>
+      <div class="terminal-bar">
+        <span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <h2 id="terminal-title">visitor@maarij.dev</h2>
+        <span class="terminal-tab" aria-hidden="true">portfolio</span>
+      </div>
+      <div class="terminal-screen">
+        <p class="terminal-command"><span class="accent">$</span> <span id="last-command">whoami</span></p>
+        <div id="terminal-output" aria-live="polite" aria-atomic="true">
+          <dl class="terminal-facts">
+            <dt>Name</dt><dd>Maarij</dd>
+            <dt>Focus</dt><dd>Software · Self-hosting</dd>
+            <dt>Learning</dt><dd>Terraform · Kubernetes</dd>
+          </dl>
+        </div>
+        <p class="terminal-hint" id="terminal-hint" hidden>Type <button id="terminal-help" type="button">help</button> to see available commands.</p>
+      </div>
+      <form id="terminal-form" class="terminal-form" hidden>
+        <span class="terminal-prefix" aria-hidden="true">visitor@maarij.dev <b>$</b></span>
+        <input id="terminal-input" aria-label="Terminal command" aria-describedby="terminal-hint" maxlength="64" placeholder="type a command…" autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button type="submit" aria-label="Run command">run <span aria-hidden="true">↵</span></button>
+      </form>
+    </section>
+
+    <section class="page-section wrap" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading" data-reveal>
+        <p class="section-path" aria-hidden="true">./skills</p>
+        <h2 id="skills-title">Toolkit</h2>
+      </div>
+      <div class="toolkit panel" id="about" data-reveal>
+        <dl>
+          <div><dt>Working with</dt><dd>Linux <span aria-hidden="true">/</span> Self-hosted services</dd></div>
+          <div><dt>Learning</dt><dd>Terraform <span aria-hidden="true">/</span> Kubernetes <span aria-hidden="true">/</span> Automation</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="page-section wrap" id="projects" aria-labelledby="work-title">
+      <div class="section-heading section-with-link" data-reveal>
+        <div>
+          <p class="section-path" aria-hidden="true">./projects</p>
+          <h2 id="work-title">Projects</h2>
+        </div>
+        <a class="text-link" href="https://github.com/mmaarij123?tab=repositories">all repositories <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="project-grid">
+        <article class="project panel" data-reveal>
+          <p class="project-kind">Desktop software</p>
+          <h3>CamCord</h3>
+          <p>A lightweight screen recorder for Windows and Debian Linux.</p>
+          <ul class="tags" aria-label="CamCord technologies"><li>C++</li><li>Windows</li><li>Debian</li></ul>
+          <a class="text-link" href="https://github.com/mmaarij123/CamCord" aria-label="View CamCord on GitHub">repository <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="project panel" data-reveal>
+          <p class="project-kind">Web app</p>
+          <h3>PeerDrop</h3>
+          <p>Send a file directly from one browser to another in a one-time transfer.</p>
+          <ul class="tags" aria-label="PeerDrop technologies"><li>TypeScript</li></ul>
+          <a class="text-link" href="https://github.com/mmaarij123/peerdrop" aria-label="View PeerDrop on GitHub">repository <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="project panel" data-reveal>
+          <p class="project-kind">Open-source collaboration</p>
+          <h3>scrcpy</h3>
+          <p>Added a Windows GUI focused on audio and support for paired Wi-Fi sessions in my fork of the Android mirroring tool.</p>
+          <ul class="tags" aria-label="scrcpy platforms"><li>Android</li><li>Windows</li></ul>
+          <div class="project-links">
+            <a class="text-link" href="https://github.com/mmaarij123/scrcpy" aria-label="View Maarij’s scrcpy fork on GitHub">fork <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://github.com/mmaarij123/scrcpy/commit/25edda886f1f923813858a4f0294c22f6567f462" aria-label="View Maarij’s scrcpy commit on GitHub">my commit <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="project panel" data-reveal>
+          <p class="project-kind">Offline game</p>
+          <h3>Traffic Jam 3D Offline</h3>
+          <p>An offline version of Traffic Jam 3D, a driving game about weaving through traffic and avoiding collisions.</p>
+          <p class="project-access">Private repository</p>
+        </article>
+        <article class="project panel" data-reveal>
+          <p class="project-kind">Self-hosting</p>
+          <h3>Discord Music Duo</h3>
+          <p>Two self-hosted Discord music bots that share playlists and a cache.</p>
+          <ul class="tags" aria-label="Discord Music Duo technologies"><li>JavaScript</li><li>Discord</li></ul>
+          <a class="text-link" href="https://github.com/mmaarij123/discord-music-duo" aria-label="View Discord Music Duo on GitHub">repository <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="project panel" data-reveal>
+          <p class="project-kind">Self-hosting</p>
+          <h3>Discord Music Bot</h3>
+          <p>A self-hosted Discord music bot with prefix commands and interchangeable audio and metadata sources.</p>
+          <ul class="tags" aria-label="Discord Music Bot technologies"><li>JavaScript</li><li>Discord</li></ul>
+          <a class="text-link" href="https://github.com/mmaarij123/discord-music-bot" aria-label="View Discord Music Bot on GitHub">repository <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="project panel" data-reveal>
+          <p class="project-kind">Minecraft mod</p>
+          <h3>Spear Dashing</h3>
+          <p>A client-side Fabric mod that adds controls for swapping spears and dashing in Minecraft.</p>
+          <ul class="tags" aria-label="Spear Dashing technologies"><li>Java</li><li>Fabric</li></ul>
+          <a class="text-link" href="https://github.com/mmaarij123/Spear-Dashing" aria-label="View Spear Dashing on GitHub">repository <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="project panel" data-reveal>
+          <p class="project-kind">Profile repository</p>
+          <h3>GitHub Profile README</h3>
+          <p>The source for my GitHub profile, including what I’m learning and the tools I work with.</p>
+          <ul class="tags" aria-label="GitHub Profile README format"><li>Markdown</li></ul>
+          <a class="text-link" href="https://github.com/mmaarij123/mmaarij123" aria-label="View the GitHub Profile README repository">repository <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-section contact wrap" id="contacts" aria-labelledby="contact-title">
+      <div class="section-heading" data-reveal>
+        <p class="section-path" aria-hidden="true">./contact</p>
+        <h2 id="contact-title">Let’s talk.</h2>
+        <p class="contact-intro">Get in touch about a project, a collaboration, or something I’ve built.</p>
+      </div>
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form panel" action="mailto:maarij.contact@proton.me" method="post" enctype="text/plain" aria-label="Contact Maarij" data-reveal>
+          <div class="contact-fields">
+            <div class="contact-field">
+              <label for="contact-name">name <span aria-hidden="true">*</span></label>
+              <input id="contact-name" name="name" autocomplete="name" maxlength="100" pattern=".*\S.*" required>
+            </div>
+            <div class="contact-field">
+              <label for="contact-email">email <span aria-hidden="true">*</span></label>
+              <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+            </div>
+          </div>
+          <div class="contact-field">
+            <label for="contact-topic">topic</label>
+            <select id="contact-topic" name="topic">
+              <option>Project inquiry</option>
+              <option>Collaboration</option>
+              <option>Question about a repository</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="contact-field">
+            <label for="contact-message">message <span aria-hidden="true">*</span></label>
+            <textarea id="contact-message" name="message" rows="5" maxlength="1000" placeholder="What would you like to talk about?" required></textarea>
+          </div>
+          <button class="button button-primary" type="submit">Send Message</button>
+        </form>
+        <div class="contact-direct panel" data-reveal>
+          <h3>Direct</h3>
+          <a class="contact-email" href="mailto:maarij.contact@proton.me">
+            <svg class="contact-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.784.784 2 1.75 2ZM1.5 12.251c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V5.809L8.38 9.397a.75.75 0 0 1-.76 0L1.5 5.809v6.442Zm13-8.181v-.32a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25v.32L8 7.88Z"/></svg>
+            <span>maarij.contact@proton.me</span>
+          </a>
+          <p class="contact-location">
+            <svg class="contact-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="m12.596 11.596-3.535 3.536a1.5 1.5 0 0 1-2.122 0l-3.535-3.536a6.5 6.5 0 1 1 9.192-9.193 6.5 6.5 0 0 1 0 9.193Zm-1.06-8.132v-.001a5 5 0 1 0-7.072 7.072L8 14.07l3.536-3.534a5 5 0 0 0 0-7.072ZM8 9a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 9Z"/></svg>
+            <span>Lahore, PK</span>
+          </p>
+          <a class="contact-social button" href="https://github.com/mmaarij123" aria-label="Maarij on GitHub" title="GitHub">
+            <svg class="contact-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6.766 11.328c-2.063-.25-3.516-1.734-3.516-3.656 0-.781.281-1.625.75-2.188-.203-.515-.172-1.609.063-2.062.625-.078 1.468.25 1.968.703.594-.187 1.219-.281 1.985-.281.765 0 1.39.094 1.953.265.484-.437 1.344-.765 1.969-.687.218.422.25 1.515.046 2.047.5.593.766 1.39.766 2.203 0 1.922-1.453 3.375-3.547 3.64.531.344.89 1.094.89 1.954v1.625c0 .468.391.734.86.547C13.781 14.359 16 11.53 16 8.03 16 3.61 12.406 0 7.984 0 3.563 0 0 3.61 0 8.031a7.88 7.88 0 0 0 5.172 7.422c.422.156.828-.125.828-.547v-1.25c-.219.094-.5.156-.75.156-1.031 0-1.64-.562-2.078-1.609-.172-.422-.36-.672-.719-.719-.187-.015-.25-.093-.25-.187 0-.188.313-.328.625-.328.453 0 .844.281 1.25.86.313.452.64.655 1.031.655s.641-.14 1-.5c.266-.265.47-.5.657-.656"/></svg>
+          </a>
+          <p class="contact-status">Currently studying</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner wrap">
+      <div class="footer-identity" data-reveal>
+        <a class="footer-home text-link" href="#top">Maarij</a>
+        <small>© 2026 Maarij. All rights reserved.</small>
+      </div>
+      <div class="palette" id="palette" role="group" aria-label="Accent color" hidden>
+        <button type="button" data-color="red" aria-label="Red theme" aria-pressed="false"></button>
+        <button type="button" data-color="green" aria-label="Green accent" aria-pressed="false"></button>
+        <button type="button" data-color="blue" aria-label="Blue accent" aria-pressed="true"></button>
+      </div>
+    </div>
+  </footer>
+  <button type="button" class="button scroll-top" aria-label="Back to top" inert>
+    <span aria-hidden="true">↑</span>
+  </button>
+</body>
+</html>

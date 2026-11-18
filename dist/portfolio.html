@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maarij — Portfolio</title>
+  <script>
+    const destination = new URL("./", location.href);
+    const oldSections = { "#experience": "#about", "#education": "#about", "#contact": "#contacts" };
+    destination.search = location.search;
+    destination.hash = oldSections[location.hash] ?? location.hash;
+    location.replace(destination);
+  </script>
+  <noscript><meta http-equiv="refresh" content="0; url=./"></noscript>
+</head>
+<body>
+  <p><a href="./">Continue to Maarij’s portfolio</a></p>
+</body>
+</html>
