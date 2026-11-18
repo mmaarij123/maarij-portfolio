@@ -95,12 +95,7 @@ function setAccent(color) {
   }
 }
 
-try {
-  const saved = localStorage.getItem(accentKey);
-  if (colors.some((button) => button.dataset.color === saved)) setAccent(saved);
-} catch {
-  // Accent selection also works when storage is unavailable.
-}
+setAccent(document.documentElement.dataset.accent);
 
 for (const button of colors) {
   button.addEventListener("click", () => {

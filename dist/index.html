@@ -1,12 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-accent="red">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Maarij’s portfolio of software projects and self-hosted services.">
-  <meta name="theme-color" content="#0b100f">
+  <meta name="theme-color" content="#120b0e">
   <title>Maarij — Software &amp; Infrastructure</title>
   <link rel="icon" href="./assets/mark.png">
+  <script>
+    try {
+      const savedAccent = localStorage.getItem("maarij-portfolio-accent");
+      if (["red", "green", "blue"].includes(savedAccent)) {
+        document.documentElement.dataset.accent = savedAccent;
+      }
+    } catch {
+      // The default red theme works when browser storage is unavailable.
+    }
+  </script>
   <link rel="stylesheet" href="./site.css">
   <script src="./motion.js" defer></script>
   <script src="./portfolio.js" defer></script>
@@ -135,11 +145,11 @@
           <a class="text-link" href="https://github.com/mmaarij123/Spear-Dashing" aria-label="View Spear Dashing on GitHub">repository <span aria-hidden="true">↗</span></a>
         </article>
         <article class="project panel" data-reveal>
-          <p class="project-kind">Profile repository</p>
-          <h3>GitHub Profile README</h3>
-          <p>The source for my GitHub profile, including what I’m learning and the tools I work with.</p>
-          <ul class="tags" aria-label="GitHub Profile README format"><li>Markdown</li></ul>
-          <a class="text-link" href="https://github.com/mmaarij123/mmaarij123" aria-label="View the GitHub Profile README repository">repository <span aria-hidden="true">↗</span></a>
+          <p class="project-kind">Android plugin</p>
+          <h3>Microcord Quests</h3>
+          <p>A Discord Quests plugin for Microcord on Android, with Orbs tracking, video quests, rewards, and a Settings shortcut.</p>
+          <ul class="tags" aria-label="Microcord Quests technologies"><li>Kotlin</li><li>Android</li></ul>
+          <a class="text-link" href="https://github.com/mmaarij123/microcord-quests" aria-label="View Microcord Quests on GitHub">repository <span aria-hidden="true">↗</span></a>
         </article>
       </div>
     </section>
@@ -203,9 +213,9 @@
         <small>© 2026 Maarij. All rights reserved.</small>
       </div>
       <div class="palette" id="palette" role="group" aria-label="Accent color" hidden>
-        <button type="button" data-color="red" aria-label="Red theme" aria-pressed="false"></button>
+        <button type="button" data-color="red" aria-label="Red theme" aria-pressed="true"></button>
         <button type="button" data-color="green" aria-label="Green accent" aria-pressed="false"></button>
-        <button type="button" data-color="blue" aria-label="Blue accent" aria-pressed="true"></button>
+        <button type="button" data-color="blue" aria-label="Blue accent" aria-pressed="false"></button>
       </div>
     </div>
   </footer>
