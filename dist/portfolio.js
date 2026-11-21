@@ -4,7 +4,7 @@ const wordmark = document.querySelector(".wordmark");
 
 function updateCurrentSection() {
   const target = document.getElementById(location.hash.slice(1));
-  const section = target?.closest("section");
+  const section = target?.closest("main > section");
   const current = sectionLinks.find((link) => link.hash === "#" + section?.id) ?? sectionLinks[0];
 
   for (const link of sectionLinks) {
